@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多様性TETRIS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <img id="kaisiBtn" src="./img/kaisi1.png" alt="開始ボタン">
+    <img id="hutariBtn" src="./img/hutari1.png" alt="二人ボタン">
+    <img id="themeBtn" src="./img/theme1.png" alt="テーマボタン">
+    <img id="asobiBtn" src="./img/asobi1.png" alt="遊びボタン"/>
+    <img id="kureBtn" src="./img/kure1.png" alt="クレジットボタン"/>
+    <audio id="bgm" src="./bgm/A175.mp3" loop></audio>
+    <h1 class="title">多様性</h1>
+    <h2 class="title2">TETRIS</h2>
+
+    <div id="gameContainer" style="display: none;">
+        <canvas id="leftCanvas" width="660" height="1100"></canvas>
+        <canvas id="rightCanvas" width="660" height="1100"></canvas>
+        <canvas id="rholdCanvas" width="80" height="80"></canvas>
+        <canvas id="lholdCanvas" width="80" height="80"></canvas>
+    </div>
+    <div id="RHpDisplay"></div>
+    <div id="LHpDisplay"></div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <span id="closeModal" class="close">&times;</span>
+          <p style="font-size: 24px;">
+            ・一人でとことんモードは矢印キーで操作<br>
+            ・←→で左右移動　↑で回転　↓で落下速度アップ　右ctrlでホールド<br>
+            ・二人でわいわいモードの右側は矢印キーで操作　左側はwasdで操作<br>
+            ・adで左右移動　wで回転　sで落下速度アップ　gでホールド<br>
+          </p>
+      </div>
+    </div>
+    <div id="modalk" class="modalk">
+        <div class="modal-contentk">
+          <span id="closeModalk" class="closek">&times;</span>
+            <h3 style="font-size: 30px;">使用させていただいた各種素材</h3>
+            <br>
+            <h3 style="font-size: 28px;">BGM</h3>
+            <p style="font-size: 24px;">RP-MUSIC<br></p>
+            <h3 style="font-size: 28px;">SE</h3>
+            <p style="font-size: 24px;">効果音ラボ<br></p>
+            <h3 style="font-size: 28px;">背景</h3>
+            <p style="font-size: 24px;">七三ゆきのアトリエ<br></p>
+          
+        </div>
+      </div>
+    <script src="main.js"></script>
+    <script src="tetris.js"></script>
+    
+</body>
+
+</html>
